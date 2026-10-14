@@ -1,0 +1,12 @@
+{
+  "name": "persona-chatbot-starter",
+  "private": true,
+  "workspaces": ["apps/api", "apps/web"],
+  "scripts": {
+    "dev:api": "npm run dev --workspace @persona/api",
+    "dev:web": "npm run dev --workspace @persona/web",
+    "start:api": "npm run start --workspace @persona/api",
+    "start:bot": "npm run bot --workspace @persona/api",
+    "build": "npm run build --workspace @persona/api && npm run build --workspace @persona/web"
+  }
+}
